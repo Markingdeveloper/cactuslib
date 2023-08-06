@@ -7,7 +7,7 @@
 
 ### Support group
 
-[Telegram](https://telegram.me/Cactuslib
+[Telegram](https://telegram.me/Cactuslib)
 ## Installation
 
 ```shellscript
