@@ -94,4 +94,42 @@ console.log(data)
 cACTUSlIB pROVIDER
 ```
 
+###sinDeg method
+
+***The sinDeg method is a mathematical operator. It displays the degrees of the sine in JavaScript.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+data = sinDeg(30)
+
+console.log(data)
+```
+***Output:***
+```
+0.5
+```
+
+###cosDeg method
+
+***The cosDeg method is a mathematical operator. It displays the degrees of the cosine in JavaScript.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+data = cosDeg(60)
+
+console.log(data)
+```
+***Output:***
+```
+0.5
+```
+
 ***More methods will be explained in the next days.Enjoy!***
