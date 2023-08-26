@@ -94,7 +94,7 @@ console.log(data)
 cACTUSlIB pROVIDER
 ```
 
-###sinDeg method
+### sinDeg method
 
 ***The sinDeg method is a mathematical operator. It displays the degrees of the sine in JavaScript.***
 
@@ -113,7 +113,7 @@ console.log(data)
 0.5
 ```
 
-###cosDeg method
+### cosDeg method
 
 ***The cosDeg method is a mathematical operator. It displays the degrees of the cosine in JavaScript.***
 
