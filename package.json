@@ -1,0 +1,27 @@
+{
+  "name": "cactuslib",
+  "version": "1.2.0",
+  "description": "A library that contains new string and number methods for JavaScript/Node.js",
+  "main": "cactus.js",
+  "bin": "cactus.js",
+  "scripts": {
+    "start": "node cactus.js"
+  },
+  "keywords": [
+    "cactus",
+    "cactusjs",
+    "cactus.js",
+    "cactuslib",
+    "helper"
+  ],
+  "author": "Qarvos",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkingDeveloper/cactuslib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Markingdeveloper/cactuslib/issues"
+  },
+  "homepage": "https://github.com/Markingdeveloper/cactuslib#readme"
+}
