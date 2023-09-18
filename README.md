@@ -379,4 +379,180 @@ console.log(data)
 30
 ```
 
+### toBase64 method
+
+***The toBase64 converts a characher into Base64 code.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+data = cactuslib.toBase64("*")
+
+console.log(data)
+```
+***Output:***
+```
+Kg==
+```
+
+### toASCII method
+
+***The toASCII method converts a Base64 data into ASCII(normal character)***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+data = cactuslib.toASCII('Kg==')
+
+console.log(data)
+```
+***Output:***
+```
+*
+```
+
+### isAlnum method
+
+***The isAlnum method controls characters is alphanumerical or not.Returns true or false.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+data = cactuslib.isAlnum("Cactuslibv120")
+data2 = cactuslib.isAlnum("source.net.de.ar.sv")
+
+console.log(data)
+console.log(data2)
+```
+***Output:***
+```
+true
+false
+```
+
+### isAlpha method
+
+***The isAlpha method controls characters is alphabetical or not.Returns true or false.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+data = cactuslib.isAlpha("Cactuslib")
+data2 = cactuslib.isAlpha("cactuslibv120")
+
+console.log(data)
+console.log(data2)
+```
+***Output:***
+```
+true
+false
+```
+
+### isASCII method
+
+***The isASCII method controls characters is ASCII character or not.Returns true or false.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+data = cactuslib.isASCII("Cactuslib v1.2.0 now in npm!")
+
+console.log(data)
+```
+***Output:***
+```
+true
+```
+
+### isIdentifier method
+
+***The isIdentifier method controls characters is identifier or not.Returns true or false.***
+
+### Identifier rule
+***A string is considered a valid identifier if it only contains alphanumeric letters (a-z) and (0-9), or underscores (_). A valid identifier cannot start with a number, or contain any spaces.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+a = "MyFolder"
+b = "Demo002"
+c = "2bring"
+d = "my demo"
+
+console.log(cactuslib.isIdentifier(a))
+console.log(cactuslib.isIdentifier(b))
+console.log(cactuslib.isIdentifier(c))
+console.log(cactuslib.isIdentifier(d))
+```
+***Output:***
+```
+true
+true
+false
+false
+```
+
+### isLower method
+
+***The isLower method controls characters are lower or not.Returns true or false.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+a = "Hello world!"
+b = "hello 123"
+c = "mynameisPeter"
+
+console.log(cactuslib.isLower(a))
+console.log(cactuslib.isLower(b))
+console.log(cactuslib.isLower(c))
+```
+***Output:***
+```
+false
+true
+false
+```
+
+### isPrintable method
+
+***The isPrintable method controls characters is printable or not.Returns true or false.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+txt = "Cactuslib is good source"
+y = cactuslib.isPrintable("txt")
+console.log(y)
+```
+***Output:***
+```
+true
+```
+
 ***More methods will be explained in the next days.Enjoy!***
