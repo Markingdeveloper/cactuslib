@@ -603,4 +603,75 @@ true
 false
 ```
 
-***More methods will be explained in the next days.Enjoy!***
+### isUpper method
+
+***The isUpper method controls characters are written with UpperCase or not.Returns true or false.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+
+var a = "Hello World!"
+
+var b = "hello 123"
+
+var c = "MY NAME IS PETER"
+
+
+console.log(cactuslib.isUpper(a))
+
+console.log(cactuslib.isUpper(b))
+
+console.log(cactuslib.isUpper(c))
+```
+***Output:***
+```
+false
+false
+true
+```
+
+### ljust method
+
+***The ljust method adds written word at the leftside of the first word.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+var txt = "banana"
+
+data = cactuslib.ljust(txt, 20, "C")
+
+console.log(data)
+```
+***Output:***
+```
+bananaCCCCCCCCCCCCCC
+```
+
+### rjust method
+
+***The rjust method adds written word at the rightside of the first word.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+var txt = "banana"
+
+data = cactuslib.rjust(txt, 20, "C")
+
+console.log(data)
+```
+***Output:***
+```
+CCCCCCCCCCCCCCbanana
+```
