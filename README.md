@@ -555,4 +555,52 @@ console.log(y)
 true
 ```
 
+### isSpace method
+
+***The isSpace method controls strings that contain space or not.Returns true or false.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+data = cactuslib.isSpace("Isgood")
+data1= cactuslib.isSpace('       ')
+
+console.log(data)
+console.log(data1)
+```
+***Output:***
+```
+false
+true
+```
+
+### isTitle method
+
+***The isTitle method controls words that are capitalized or not.Returns true or false.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+
+data = cactuslib.isTitle("Isgood")
+
+data1= cactuslib.isTitle('lkdswlkjwesqwaslfsa')
+
+
+console.log(data)
+
+console.log(data1)
+```
+***Output:***
+```
+true
+false
+```
+
 ***More methods will be explained in the next days.Enjoy!***
