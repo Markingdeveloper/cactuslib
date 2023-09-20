@@ -196,10 +196,23 @@ function isIdentifier(str) {
 }
 
 function isLower(str) {
-  if (str == str.toLowerCase()) {
+  let arr = []
+  var code
+  for (var i = 0; i<str.length; i++) {
+    code = str.charCodeAt(i)
+    if (code > 64 && code < 91) {
+      arr.push(0)
+    }
+    else {
+      arr.push(1)
+    }
+  }
+  if (arr.includes(0) == true) {
+    return false
+  }
+  else {
     return true
   }
-  return false
 }
 
 function isPrintable(char) {
@@ -231,26 +244,41 @@ function isTitle(str) {
 }
 
 function isUpper(str) {
-  if (str == str.toUpperCase()) {
+  let arr = []
+  var code
+  for (var i = 0; i<str.length; i++) {
+    code = str.charCodeAt(i)
+    if (code > 96 && code < 123) {
+      arr.push(0)
+    }
+    else {
+      arr.push(1)
+    }
+  }
+  if (arr.includes(0) == true) {
+    return false
+  }
+  else {
     return true
   }
-  return false
 }
 
-function ljust(text, num) {
+function ljust(text, num, word) {
   text = String(text)
   let len = text.length
+  word = String(word)
   let impt = num - len
-  let rep = " ".repeat(impt)
+  let rep = word.repeat(impt)
   
   return text + rep
 }
 
-function rjust(text, num) {
+function rjust(text, num, word) {
   text = String(text)
   let len = text.length
+  word = String(word)
   let impt = num - len
-  let rep = " ".repeat(impt)
+  let rep = word.repeat(impt)
   
   return rep + text
 }
@@ -263,6 +291,7 @@ function zfill(text, num) {
   
   return rep + text
 }
+
 
 module.exports = {
   range, title, swapCase, sinDeg, cosDeg, tanDeg, cot, cotDeg, sec, csc, secDeg, cscDeg, acot, acotDeg, asec, asecDeg, acsc, acscDeg, toBase64, toASCII, isAlnum, isAlpha, isASCII, isIdentifier, isLower, isPrintable, isSpace, isTitle, isUpper, ljust, rjust, zfill
