@@ -675,3 +675,41 @@ console.log(data)
 ```
 CCCCCCCCCCCCCCbanana
 ```
+
+### bit_length method
+
+***The bit_length method sums how many bits did a number take to keep in RAM.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+var data = 37
+
+console.log(cactuslib.bit_length(data))
+```
+***Output:***
+```
+6
+```
+
+### enumerate method
+
+***The enumerate method arranges in index order in a given variable.***
+
+***Example***
+
+***Code:***
+```
+const cactuslib = require('cactuslib')
+
+let data = ["Cactus", "Library", 565, "Js"]
+
+console.log(enumerate(data))
+```
+***Output:***
+```
+[ [ 0, 'Cactus' ], [ 1, 'Library' ], [ 2, 565 ], [ 3, 'Js' ] ]
+```

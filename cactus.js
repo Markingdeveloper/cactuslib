@@ -292,7 +292,19 @@ function zfill(text, num) {
   return rep + text
 }
 
+function bit_length(num) {
+  len = (num.toString(2)).length
+  return len
+}
+
+function enumerate(item) {
+  arr = []
+  for(var i = 0; i < item.length; i++) {
+    arr.push([i, item[i]])
+  }
+  return arr;
+}
 
 module.exports = {
-  range, title, swapCase, sinDeg, cosDeg, tanDeg, cot, cotDeg, sec, csc, secDeg, cscDeg, acot, acotDeg, asec, asecDeg, acsc, acscDeg, toBase64, toASCII, isAlnum, isAlpha, isASCII, isIdentifier, isLower, isPrintable, isSpace, isTitle, isUpper, ljust, rjust, zfill
+  range, title, swapCase, sinDeg, cosDeg, tanDeg, cot, cotDeg, sec, csc, secDeg, cscDeg, acot, acotDeg, asec, asecDeg, acsc, acscDeg, toBase64, toASCII, isAlnum, isAlpha, isASCII, isIdentifier, isLower, isPrintable, isSpace, isTitle, isUpper, ljust, rjust, zfill, bit_length, enumerate
 }
